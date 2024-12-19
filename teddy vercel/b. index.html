@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>좌석 선택 시스템</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="welcome">환영합니다!</h1>
+  <div id="login-screen">
+    <h2>로그인</h2>
+    <input type="text" id="studentId" placeholder="학번 입력 (예: 2414)" maxlength="4">
+    <button onclick="login()">로그인</button>
+  </div>
+  
+  <div id="seat-selection" style="display:none;">
+    <h2>좌석 선택</h2>
+    <div class="seat-grid" id="seatGrid"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
