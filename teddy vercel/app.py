@@ -149,5 +149,3 @@ def select_seat():
     seats_collection.update_one({"seat_id": seat_id}, {"$set": {"student_id": student_id}})
     return jsonify({"status": "success", "message": "좌석이 선택되었습니다."})
 
-if __name__ == "__main__":
-    app.run(debug=True)
